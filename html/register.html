@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Input your info</h1>
+      </p>
+
+      <form method = "post" action = "http://www.deitel.com">
+        <p>
+            <label>ID:
+               <input type = "ID" required/> 
+                  
+            </label>
+         </p>
+         <p >
+            <label>Password:
+               <input type = "Password" id=pwd required/>     
+            </label>
+         </p>
+         <p >
+            <label>Confirm Password:
+               <input type = "Password" id =cpwd required/>     
+            </label>
+         </p>
+         <div id="showErrorcPwd"></div>
+         <p>
+            <label>First Name:
+               <input type = "First Name" required/> 
+                  
+            </label>
+         </p>
+         <p>
+            <label>Last Name:
+               <input type = "Last Name" required/> 
+                  
+            </label>
+         </p>
+         <p>
+            <label>Birth:
+               <input type = "date" required/> 
+                  (yyyy-mm-dd)
+            </label>
+         </p>
+         
+         
+         <p>
+            <label>Email:
+               <input type = "email" placeholder = "name@nchu.edu.com.tw" 
+                  required /> (name@nchu.edu.com.tw)
+            </label>
+         </p>
+         <p>
+            <label>Tel:
+               <input type = "tel" required /> 
+            </label>
+         </p>
+         <p>
+            <input type = "submit" value = "Submit" />
+            <input type = "reset" value = "Clear" />
+         </p>   
+      </form>
+<script src="../scripts/register.js"></script>
+</body>
+</html>
