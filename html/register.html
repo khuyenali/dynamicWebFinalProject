@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,62 +10,65 @@
 
 <body>
     <h1>Input your info</h1>
-      </p>
+    </p>
 
-      <form method = "post" action = "http://www.deitel.com">
-        <p>
-            <label>ID:
-               <input type = "ID" required/> 
+    <!-- <form action=""> -->
+    <p>
+        <label>ID:
+               <input type = "ID" name = "ID" id = ID required/> 
                   
             </label>
-         </p>
-         <p >
-            <label>Password:
-               <input type = "Password" id=pwd required/>     
+    </p>
+    <p>
+        <label>Password:
+               <input type = "Password" name = "pwd" id=pwd required/>     
             </label>
-         </p>
-         <p >
-            <label>Confirm Password:
-               <input type = "Password" id =cpwd required/>     
+    </p>
+    <p>
+        <label>Confirm Password:
+               <input type = "Password" name = "cpwd" id =cpwd required/>     
             </label>
-         </p>
-         <div id="showErrorcPwd"></div>
-         <p>
-            <label>First Name:
-               <input type = "First Name" required/> 
+    </p>
+    <div id="showErrorcPwd"></div>
+    <p>
+        <label>First Name:
+               <input type = "First Name" name = "fname" id= fname required/> 
                   
             </label>
-         </p>
-         <p>
-            <label>Last Name:
-               <input type = "Last Name" required/> 
+    </p>
+    <p>
+        <label>Last Name:
+               <input type = "Last Name" name = "lname" id = lname required/> 
                   
             </label>
-         </p>
-         <p>
-            <label>Birth:
-               <input type = "date" required/> 
+    </p>
+    <p>
+        <label>Birth:
+               <input type = "date" name = "birth" id = birth required/> 
                   (yyyy-mm-dd)
             </label>
-         </p>
-         
-         
-         <p>
-            <label>Email:
-               <input type = "email" placeholder = "name@nchu.edu.com.tw" 
+    </p>
+
+
+    <p>
+        <label>Email:
+               <input type = "email" name = "email" id = email placeholder = "name@nchu.edu.com.tw" 
                   required /> (name@nchu.edu.com.tw)
             </label>
-         </p>
-         <p>
-            <label>Tel:
-               <input type = "tel" required /> 
+    </p>
+    <p>
+        <label>Tel:
+               <input type = "tel" name = "tel" id = tel required /> 
             </label>
-         </p>
-         <p>
-            <input type = "submit" value = "Submit" />
-            <input type = "reset" value = "Clear" />
-         </p>   
-      </form>
-<script src="../scripts/register.js"></script>
+    </p>
+    <button id="submit">submit</button>
+    <p>
+        <!--<input type="submit" value="Submit" />-->
+        <input type="reset" value="Clear" />
+    </p>
+    <!-- </form> -->
+    <div id="results"></div>
+    <script src="../scripts/register.js"></script>
 </body>
+
 </html>
