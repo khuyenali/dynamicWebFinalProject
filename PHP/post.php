@@ -1,9 +1,9 @@
 <?php
-
 $data = json_decode(file_get_contents("php://input"), true);
-error_reporting(E_ALL);
+// $data = file_get_contents("php://input");
 
-$pagename = 'my_page1';
+error_reporting(E_ALL);
+$pagename = 'my_page3';
 
 $newFileName = '../posts/' . $pagename . ".html";
 $newFileContent = $data;
